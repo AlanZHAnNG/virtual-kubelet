@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f0c2e9d-8b0d-455e-9376-04401af6dda9" name="Default Changelist" comment="virutal kubelet version 2.0 20190527&#10;1.Add database(mysql) operation logic -&gt; mysql_client.go file&#10;2.Modified zun.go file,Replace static variable for database instantiation -&gt; zun.go&#10;3.Modified the bug that Deployment can't display Ready -&gt; zun.go(zunPodStateToPodConditions)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/openstack/mysql_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/providers/openstack/mysql_client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/openstack/zun.go" beforeDir="false" afterPath="$PROJECT_DIR$/providers/openstack/zun.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/virtual-kubelet/virtual-kubelet/providers/register/provider_openstack.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/virtual-kubelet/virtual-kubelet/providers/register/provider_openstack.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="564543167@qq.com" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoDepProject">
+    <integration-enabled>true</integration-enabled>
+    <exec-path>$USER_HOME$/../bin/dep</exec-path>
+  </component>
+  <component name="ProjectId" id="1WN7D7pujCn3v9HcL98wjuvzbFt" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Code style issuesGo</id>
+          </State>
+          <State>
+            <id>Go</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GoErrorStringFormat</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="DockerRegistry" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build zun.go">
+    <configuration name="go build config.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="virtual-kubelet" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/providers/openstack/config.go" />
+      <package value="github.com/virtual-kubelet/virtual-kubelet" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="virtual-kubelet" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="github.com/virtual-kubelet/virtual-kubelet" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build provider_openstack.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="virtual-kubelet" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/providers/register/provider_openstack.go" />
+      <package value="github.com/virtual-kubelet/virtual-kubelet" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build zun.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="virtual-kubelet" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/providers/openstack/zun.go" />
+      <package value="github.com/virtual-kubelet/virtual-kubelet" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="provider_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="virtual-kubelet" />
+      <working_directory value="$PROJECT_DIR$/providers/aws" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/virtual-kubelet/virtual-kubelet" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/providers/aws/provider_test.go" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build config.go" />
+      <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build provider_openstack.go" />
+      <item itemvalue="Go Build.go build zun.go" />
+      <item itemvalue="Go Test.provider_test.go" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build config.go" />
+        <item itemvalue="Go Build.go build provider_openstack.go" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.provider_test.go" />
+        <item itemvalue="Go Build.go build zun.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="provider_test_go - 2018.12.12 at 10h 13m 36s.xml">
+      <configuration name="provider_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="virutal kubelet init development by Jack" />
+    <MESSAGE value="virutal kubelet init version 1.0 20190412" />
+    <MESSAGE value="virutal kubelet modified version 1.1 20190423" />
+    <option name="LAST_COMMIT_MESSAGE" value="virutal kubelet modified version 1.1 20190423" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="182" key="SettingsEditor" timestamp="1578989771980">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="653" y="182" key="SettingsEditor/0.0.3840.1080@0.0.3840.1080" timestamp="1578989771980" />
+    <state x="2537" y="122" width="752" height="795" key="find.popup" timestamp="1578993343609">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="2537" y="122" width="752" height="795" key="find.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1578993343609" />
+    <state x="626" y="226" width="672" height="678" key="search.everywhere.popup" timestamp="1583169680272">
+      <screen x="0" y="0" width="3840" height="1080" />
+    </state>
+    <state x="626" y="226" width="672" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1583169680272" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
